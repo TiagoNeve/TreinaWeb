@@ -1,0 +1,92 @@
+/*Estilizando Textos*/
+/*Fontes:  
+	Tipografia: 
+		- Serif:  É dado o nome de fontes do tipo serif às fontes que recebem continuações em suas extremidades, conhecidas como serifas;
+		- Sans serife:  Sem as serifas;
+		- Cursive: As fontes do tipo cursive ou cursiva são aquelas que se assemelham da escrita a mão livre;
+		- fantasy: Fontes do tipo fantasy ou fantasia são aquelas com características decorativas;
+		- monospace: Largura, altura e espaçamento são os mesmos;
+
+*/
+p {
+	font-family: Arial, "Times New Roman",Helvetica, serif, sans-serif;
+	/*Pode deixar somente uma fonte*/
+	/*Escolher a família é importante para deixar o visual da página o mais agradável possível, sem muitas alterações de computadores para computadores.*/
+}
+
+/*Regra para importar fonts*/
+@font-face{
+	font-family: Pacifico;
+	src: url("fontes/Pacifico-Regular.ttf");
+	/*Pode ser qualquer Url, até a que estão hospedadas na net*/
+	/*Dessa forma não é necessário depender da máquina do usuário para que sua página tenha uma cara agradável, basta baixar a fonte desejada e colocar no seu projeto e subir para prod, assim você importa tal fonte para dentro do seu código e atribui um nome a ele, depois basta chamar pelo seu nome e pimba, está lá a fonte para todos que entrarem em sua página.*/
+}
+
+p {
+	font-family: Pacifico;
+}
+
+/*É possível utilizar Fontes externas, como Google, que disponibiliza uma gama de fonts para todos.*/
+/*Adicion o link no Head do html, assim basta colocar no Font-Family*/
+p {
+	font-family: 'Lang Cong', cursive;
+}
+
+/*Propriedades para trabalhar com estilização de textos.*/
+p {
+	font-size: 12px;
+	/*Tamanho da fonte*/
+	color:  red;
+	/*cor da fonte*/
+	font-style: italic;
+	/*Colocar um estilo para a fonte, podendo ter italic*/
+	font-weight: bold;
+	/*Coloca o peso da fonte*/
+	text-indent: 15px;
+	/*Mexer na identação*/
+	text-align: right;
+	/*Alinhar o texto*/
+	text-decoration: underline;
+	/*Para colocar um adereço ao texto, underline, overline*/
+	text-transform: capitalize;
+	/*Mudar o tipo de caixa, para colocar tudo maiusculo ou minusculo.*/
+	text-shadow: 0 0 2px red;
+	/*Posicao x Posicao Y Desfoque Cor*/
+	/*Pode colocar uma sombra no texto*/
+	/*É possível colocar mais de uma sombra, basta separar por virgula.*/
+}
+
+p {
+	letter-spacing: 2px;
+	/*Distancia entre as letras*/
+	word-spacing: 2px;
+	/*Espaço entre palavras*/
+	line-height: 100%;
+	/*Altura da linha*/
+	word-break: break-all;
+	/*Para que a palabra quebre, para não vazar o container*/
+	white-space: pre-line;
+	/*Ele quebra exatamente como está escrito no código*/
+}
+
+/*Teste seus conhecimentos: */
+/*
+	Questão 1: Marque as opções corretas;
+		Fontes em que os caracteres possuem o mesmo tamanho: Mono-espaçadas;
+		Fontes sem prolongamentos em suas extremidades: sem serifa;
+		Fontes com traços e prolongamento no fim das hastes: Serifada;
+		Fontes com decorações: Fantasia;
+		Fontes que se aproximam da escrita à mão: Cursiva;
+	
+	Questão 2: Selecione todas as opções veridadeiras em relação às fontes no CSS;
+		Podemos usar o CSS para alterar o espaço entre os caracteres de uma fonte.
+
+		Podemos usar fontes que não existem no sistema operacional do usuário.
+
+	Questão 3: Selecione todas as opções que indicam propriedades do CSS para se estilizar textos;
+		text-shadow
+		text-align
+		text-transform
+*/
+
+/*===================================*/
